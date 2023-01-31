@@ -1,17 +1,16 @@
-import projectImg from '../assets/img/hero-bg-3000.jpg';
+import projectImg from '../assets/img/main.jpg';
 
 function Main() {
   return (
     <div id="hero" class="hero s-hero target-section">
       <div class="row hero-content">
         <div className="column large-full">
-          <h1 className="text-left">
+          <h1 className="text-left text-black">
             Привіт! Це - <br />
             Благодійний фонд <br />
             для підтримки ЗСУ. <br />
             Разом до перемоги!
           </h1>
-
           <ul class="hero-social">
             <li>
               <a href="#0" title="">
