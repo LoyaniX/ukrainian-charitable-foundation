@@ -2,16 +2,16 @@ import projectImg from '../assets/img/main.jpg';
 
 function Main() {
   return (
-    <div id="hero" class="hero s-hero target-section">
-      <div class="row hero-content">
+    <div id="hero" className="hero s-hero target-section">
+      <div className="row hero-content">
         <div className="column large-full">
           <h1 className="text-left text-black">
             Привіт! Це - <br />
             Благодійний фонд <br />
-            для підтримки ЗСУ. <br />
+            незламності України. <br />
             Разом до перемоги!
           </h1>
-          <ul class="hero-social">
+          <ul className="hero-social">
             <li>
               <a href="#0" title="">
                 Twitter
@@ -31,8 +31,8 @@ function Main() {
         </div>
       </div>
 
-      <div class="hero-scroll">
-        <a href="#about" class="scroll-link smoothscroll">
+      <div className="hero-scroll">
+        <a href="#portfolio" className="scroll-link smoothscroll">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M12 24l-8-9h6v-15h4v15h6z" />
           </svg>

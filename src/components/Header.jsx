@@ -35,55 +35,49 @@ function Header() {
 
   return (
     <div id="nav" className={`${openBurgerMenu ? 'menu-is-open ' : ''}text-left `}>
-      <div class={`${!visible ? 's-header-hedden' : ''} s-header`}>
-        <div class="header-logo">
+      <div className={`${!visible ? 's-header-hedden' : ''} s-header`}>
+        <div className="header-logo">
           <img src={headerLogo} alt="" />
         </div>
 
-        <div class="header-content">
-          <nav class="row header-nav-wrap">
-            <ul class="header-nav">
+        <div className="header-content">
+          <nav className="row header-nav-wrap">
+            <ul className="header-nav">
               <li>
-                <a class="smoothscroll" href="#hero" title="Intro" onClick={() => onClickLink()}>
+                <a className="smoothscroll a" title="Intro" onClick={() => onClickLink()}>
                   Головна
                 </a>
               </li>
               <li>
-                <a class="smoothscroll" href="#about" title="About" onClick={() => onClickLink()}>
-                  Допомога ЗСУ
+                <a className="smoothscroll a" title="Works" onClick={() => onClickLink()}>
+                  Проєкти
                 </a>
               </li>
               <li>
-                <a
-                  class="smoothscroll"
-                  href="#services"
-                  title="Services"
-                  onClick={() => onClickLink()}
-                >
-                  Часті питання
+                <a className="smoothscroll a" title="Works" onClick={() => onClickLink()}>
+                  Мотивація
                 </a>
               </li>
               <li>
-                <a
-                  class="smoothscroll"
-                  href="#portfolio"
-                  title="Works"
-                  onClick={() => onClickLink()}
-                >
-                  Наші проєкти
+                <a className="smoothscroll a" title="Works" onClick={() => onClickLink()}>
+                  Про нас
                 </a>
               </li>
               <li>
-                <a href="mailto:#0" title="Contact us" onClick={() => onClickLink()}>
+                <a className="smoothscroll a" title="Services" onClick={() => onClickLink()}>
+                  итання
+                </a>
+              </li>
+
+              <li>
+                <a className="smoothscroll a" title="Contact us" onClick={() => onClickLink()}>
                   Контакти
                 </a>
               </li>
             </ul>
           </nav>
 
-          <button href="#0" class="btn btn--stroke btn--small">
-            Задонатити
-          </button>
+          <button className="btn btn--stroke btn--small">Задонатити</button>
         </div>
 
         <a

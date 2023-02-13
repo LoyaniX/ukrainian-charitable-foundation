@@ -1,120 +1,131 @@
-import windowImg from '../assets/img/portfolio/windows-in-the-city@2x.jpg';
-import buildinBlocks from '../assets/img/portfolio/building-blocks@2x.jpg';
-import jump from '../assets/img/portfolio/shout-and-jump@2x.jpg';
-import sand from '../assets/img/portfolio/sand-dunes@2x.jpg';
-import wood from '../assets/img/portfolio/woodcraft@2x.jpg';
-import lamp from '../assets/img/portfolio/lamp@2x.jpg';
+import car from '../assets/img/car.png';
+import drone from '../assets/img/drone.png';
+import guma from '../assets/img/guma.png';
+import plane from '../assets/img/plane.png';
+import starlink from '../assets/img/starlink.png';
+import vision from '../assets/img/vision.png';
 
 function OurProjects() {
   return (
-    <section id="portfolio" class="s-portfolio target-section">
-      <div class="row s-portfolio__header text-left">
-        <div class="column large-6 medium-8 tab-full">
-          <div class="section-intro" data-num="03">
-            <h3 class="subhead">ПРОЄКТИ</h3>
-            <h1 class="display-1">Наші останні реалізовані проєкти</h1>
+    <section id="portfolio" className="s-portfolio target-section">
+      <div className="right-vert-line"></div>
+      <div className="row s-portfolio__header text-left">
+        <div className="column large-6 medium-8 tab-full">
+          <div className="section-intro" data-num="01">
+            <h3 className="subhead">ПРОЄКТИ</h3>
+            <h1 className="display-1">Наші реалізовані проєкти</h1>
           </div>
         </div>
       </div>
 
-      <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
-        <div class="column">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a class="folio-item__thumb-link" title="Windows in The City" data-size="1050x700">
-                <img src={windowImg} alt="" />
+      <div className="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+        <div className="column">
+          <div className="folio-item">
+            <div className="folio-item__thumb">
+              <a className="folio-item__thumb-link" title="Windows in The City">
+                <img src={car} alt="" />
               </a>
             </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">Branding</div>
-              <h4 class="folio-item__title">Windows in The City</h4>
+            <div className="folio-item__info">
+              <div className="folio-item__cat">Пекельні Тачки</div>
+              <h4 className="folio-item__title">
+                Здійснили закупівлі 899+ тачок для українського війська.
+              </h4>
             </div>
-            <button title="Project Link" class="folio-item__project-link">
+            <button title="Project Link" className="folio-item__project-link">
               Задонатити
             </button>
           </div>
         </div>
 
-        <div class="column">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a class="folio-item__thumb-link" title="Windows in The City" data-size="1050x700">
-                <img src={buildinBlocks} alt="" />
+        <div className="column">
+          <div className="folio-item">
+            <div className="folio-item__thumb">
+              <a className="folio-item__thumb-link" title="Windows in The City">
+                <img src={drone} alt="" />
               </a>
             </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">Branding</div>
-              <h4 class="folio-item__title">Windows in The City</h4>
+            <div className="folio-item__info">
+              <div className="folio-item__cat">Дрони, "Очі в небі"</div>
+              <h4 className="folio-item__title">
+                Здійснили закупівлі 3787+ дронів для українського війська.
+              </h4>
             </div>
-            <button title="Project Link" class="folio-item__project-link">
+            <button title="Project Link" className="folio-item__project-link">
               Задонатити
             </button>
           </div>
         </div>
 
-        <div class="column">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a class="folio-item__thumb-link" title="Windows in The City" data-size="1050x700">
-                <img src={jump} alt="" />
+        <div className="column">
+          <div className="folio-item">
+            <div className="folio-item__thumb">
+              <a className="folio-item__thumb-link" title="Windows in The City">
+                <img src={guma} alt="" />
               </a>
             </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">Branding</div>
-              <h4 class="folio-item__title">Windows in The City</h4>
+            <div className="folio-item__info">
+              <div className="folio-item__cat">Гуманітарна допомога</div>
+              <h4 className="folio-item__title">Надали гуманітарну допомогу для 300 000+ осіб</h4>
             </div>
-            <button title="Project Link" class="folio-item__project-link">
+            <button title="Project Link" className="folio-item__project-link">
               Задонатити
             </button>
           </div>
         </div>
 
-        <div class="column">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a class="folio-item__thumb-link" title="Windows in The City" data-size="1050x700">
-                <img src={sand} alt="" />
+        <div className="column">
+          <div className="folio-item">
+            <div className="folio-item__thumb folio-item__thumb-link">
+              <a className="folio-item__thumb-link">
+                <img src={plane} alt="" />
               </a>
             </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">Branding</div>
-              <h4 class="folio-item__title">Windows in The City</h4>
+            <div className="folio-item__info">
+              <div className="folio-item__cat">Пташки. БПЛА</div>
+              <h4 className="folio-item__title">
+                Здійснили закупівлі 58+ комплексів БПЛА для українського війська.
+              </h4>
             </div>
-            <button title="Project Link" class="folio-item__project-link">
+            <button title="Project Link" className="folio-item__project-link">
               Задонатити
             </button>
           </div>
         </div>
 
-        <div class="column">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a class="folio-item__thumb-link" title="Windows in The City" data-size="1050x700">
-                <img src={wood} alt="" />
+        <div className="column">
+          <div className="folio-item">
+            <div className="folio-item__thumb">
+              <a className="folio-item__thumb-link" title="Windows in The City">
+                <img src={starlink} alt="" />
               </a>
             </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">Branding</div>
-              <h4 class="folio-item__title">Windows in The City</h4>
+            <div className="folio-item__info">
+              <div className="folio-item__cat">Забезпечення засобами зв’язку</div>
+              <h4 className="folio-item__title">
+                Здійснили закупівлі 10615+ засобів зв'язку для українського війська.
+              </h4>
             </div>
-            <button title="Project Link" class="folio-item__project-link">
+            <button title="Project Link" className="folio-item__project-link">
               Задонатити
             </button>
           </div>
         </div>
 
-        <div class="column">
-          <div class="folio-item">
-            <div class="folio-item__thumb">
-              <a class="folio-item__thumb-link" title="Windows in The City" data-size="1050x700">
-                <img src={lamp} alt="" />
+        <div className="column">
+          <div className="folio-item">
+            <div className="folio-item__thumb">
+              <a className="folio-item__thumb-link" title="Windows in The City">
+                <img src={vision} alt="" />
               </a>
             </div>
-            <div class="folio-item__info">
-              <div class="folio-item__cat">Branding</div>
-              <h4 class="folio-item__title">Windows in The City</h4>
+            <div className="folio-item__info">
+              <div className="folio-item__cat">Забезпечення оптикою</div>
+              <h4 className="folio-item__title">
+                Здійснили закупівлі 6462+ одиниць оптики для українського війська.
+              </h4>
             </div>
-            <button title="Project Link" class="folio-item__project-link">
+            <button title="Project Link" className="folio-item__project-link">
               Задонатити
             </button>
           </div>

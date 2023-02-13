@@ -1,6 +1,5 @@
 import './App.css';
 import Header from './components/Header';
-import Preloader from './components/Preloader';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
@@ -17,9 +16,9 @@ function App() {
       }
       <Header />
       <Main />
-      <AboutUs />
-      <Directions />
       <OurProjects />
+      <Directions />
+      <AboutUs />
       <ResultOfWork />
       <Footer />
 
