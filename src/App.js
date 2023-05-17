@@ -20,7 +20,7 @@ function App() {
         <div className="App">
             {
                 showWelcome ? (
-                    <ReactLoading type={"bubbles"} color={"white"} height={'5%'} width={'5%'} className="preloader"/>
+                    <ReactLoading type={"bubbles"} color={"white"} height={'10%'} width={'10%'} className="preloader"/>
                 ) : (
                     <>
                         <Header />

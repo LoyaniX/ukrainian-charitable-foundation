@@ -1,7 +1,4 @@
-import user02 from '../assets/img/avatars/user-02.jpg';
-import user01 from '../assets/img/avatars/user-01.jpg';
-import user05 from '../assets/img/avatars/user-05.jpg';
-import user04 from '../assets/img/avatars/user-04.jpg';
+import React from "react";
 
 function ResultOfWork() {
   return (

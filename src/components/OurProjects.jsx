@@ -22,7 +22,7 @@ function OurProjects() {
         <div className="column">
           <div className="folio-item">
             <div className="folio-item__thumb">
-              <a className="folio-item__thumb-link" title="Windows in The City">
+              <a className="folio-item__thumb-link" title="Windows in The City" href="#0">
                 <img src={car} alt="" />
               </a>
             </div>
@@ -41,7 +41,7 @@ function OurProjects() {
         <div className="column">
           <div className="folio-item">
             <div className="folio-item__thumb">
-              <a className="folio-item__thumb-link" title="Windows in The City">
+              <a className="folio-item__thumb-link" title="Windows in The City" href="#0">
                 <img src={drone} alt="" />
               </a>
             </div>
@@ -60,7 +60,7 @@ function OurProjects() {
         <div className="column">
           <div className="folio-item">
             <div className="folio-item__thumb">
-              <a className="folio-item__thumb-link" title="Windows in The City">
+              <a className="folio-item__thumb-link" title="Windows in The City" href="#0">
                 <img src={guma} alt="" />
               </a>
             </div>
@@ -77,7 +77,7 @@ function OurProjects() {
         <div className="column">
           <div className="folio-item">
             <div className="folio-item__thumb folio-item__thumb-link">
-              <a className="folio-item__thumb-link">
+              <a className="folio-item__thumb-link" href="#0">
                 <img src={plane} alt="" />
               </a>
             </div>
@@ -96,7 +96,7 @@ function OurProjects() {
         <div className="column">
           <div className="folio-item">
             <div className="folio-item__thumb">
-              <a className="folio-item__thumb-link" title="Windows in The City">
+              <a className="folio-item__thumb-link" title="Windows in The City" href="#0">
                 <img src={starlink} alt="" />
               </a>
             </div>
@@ -115,7 +115,7 @@ function OurProjects() {
         <div className="column">
           <div className="folio-item">
             <div className="folio-item__thumb">
-              <a className="folio-item__thumb-link" title="Windows in The City">
+              <a className="folio-item__thumb-link" title="Windows in The City" href="#0">
                 <img src={vision} alt="" />
               </a>
             </div>

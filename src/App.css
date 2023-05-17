@@ -2707,6 +2707,8 @@ html.no-csstransitions .hero-content {
 
   .testimonial-slider__author {
     display: inline-block;
+    margin: 0;
+    padding: 0;
   }
 }
 @media screen and (max-width: 400px) {
@@ -2877,10 +2879,6 @@ html.no-csstransitions .hero-content {
     padding-top: 8rem;
   }
 
-  .ss-copyright {
-    padding-right: 10rem;
-  }
-
   .ss-go-top {
     right: 3.6rem;
   }
@@ -2892,10 +2890,6 @@ html.no-csstransitions .hero-content {
 }
 
 @media screen and (max-width: 600px) {
-  .ss-copyright {
-    padding-right: 8rem;
-  }
-
   .ss-copyright span {
     display: block;
   }

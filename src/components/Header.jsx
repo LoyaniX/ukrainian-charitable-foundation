@@ -80,6 +80,7 @@ function Header() {
           <a
               className={`${openBurgerMenu ? 'is-clicked' : ''} header-menu-toggle`}
               onClick={() => onClickMenu()}
+              href="#0"
           >
             <span>Menu</span>
           </a>

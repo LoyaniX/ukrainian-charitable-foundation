@@ -1,4 +1,4 @@
-import projectImg from '../assets/img/main.jpg';
+import React from "react";
 
 function Main() {
   return (
