@@ -10,10 +10,13 @@ function Header() {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos > prevScrollPos) {
-      setVisible(false);
-    } else {
+    console.log(currentScrollPos - prevScrollPos);
+    if (currentScrollPos < 50) {
       setVisible(true);
+    } else if (currentScrollPos - prevScrollPos < -10) {
+      setVisible(true);
+    } else if (currentScrollPos > prevScrollPos) {
+      setVisible(false);
     }
 
     setPrevScrollPos(currentScrollPos);
