@@ -1,6 +1,16 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import headerLogo from '../assets/img/logo1.svg';
+
+const tabNames = [
+  { tabName: 'Головна', id: 'main' },
+  { tabName: 'Проєкти', id: 'projects' },
+  { tabName: 'Мотивація', id: 'motivation' },
+  { tabName: 'Про нас', id: 'aboutUs' },
+  { tabName: 'Питання', id: 'questions' },
+  { tabName: 'Контакти', id: 'contacts' },
+];
 
 function Header() {
   const [openBurgerMenu, setOpenBurgerMenu] = React.useState(false);
@@ -17,6 +27,7 @@ function Header() {
       setVisible(true);
     } else if (currentScrollPos > prevScrollPos) {
       setVisible(false);
+      if (openBurgerMenu) setOpenBurgerMenu(false);
     }
 
     setPrevScrollPos(currentScrollPos);
@@ -37,60 +48,43 @@ function Header() {
   };
 
   return (
-    <div id="nav" className={`${openBurgerMenu ? 'menu-is-open ' : ''}text-left `}>
-      <div className={`${!visible ? 's-header-hedden' : ''} s-header`}>
-        <div className="header-logo">
-          <img src={headerLogo} alt="" />
+      <div id="nav" className={`${openBurgerMenu ? 'menu-is-open ' : ''}text-left `}>
+        <div className={`${!visible ? 's-header-hedden' : ''} s-header`}>
+          <div className="header-logo">
+            <img src={headerLogo} alt="" />
+          </div>
+          <div className="header-content">
+            <nav className="row header-nav-wrap">
+              <ul className="header-nav">
+                {tabNames.map((obj) => (
+                    <li>
+                      <Link
+                          key={obj.tabName}
+                          to={obj.id}
+                          activeClass="active"
+                          spy={true}
+                          smooth={true}
+                          duration={1000}
+                          onClick={() => onClickLink()}
+                          className="smoothscroll a"
+                      >
+                        {obj.tabName}
+                      </Link>
+                    </li>
+                ))}
+              </ul>
+            </nav>
+            <button className="btn btn--stroke btn--small">Задонатити</button>
+          </div>
+
+          <a
+              className={`${openBurgerMenu ? 'is-clicked' : ''} header-menu-toggle`}
+              onClick={() => onClickMenu()}
+          >
+            <span>Menu</span>
+          </a>
         </div>
-
-        <div className="header-content">
-          <nav className="row header-nav-wrap">
-            <ul className="header-nav">
-              <li>
-                <a className="smoothscroll a" title="Intro" onClick={() => onClickLink()}>
-                  Головна
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll a" title="Works" onClick={() => onClickLink()}>
-                  Проєкти
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll a" title="Works" onClick={() => onClickLink()}>
-                  Мотивація
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll a" title="Works" onClick={() => onClickLink()}>
-                  Про нас
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll a" title="Services" onClick={() => onClickLink()}>
-                  итання
-                </a>
-              </li>
-
-              <li>
-                <a className="smoothscroll a" title="Contact us" onClick={() => onClickLink()}>
-                  Контакти
-                </a>
-              </li>
-            </ul>
-          </nav>
-
-          <button className="btn btn--stroke btn--small">Задонатити</button>
-        </div>
-
-        <a
-          className={`${openBurgerMenu ? 'is-clicked' : ''} header-menu-toggle`}
-          onClick={() => onClickMenu()}
-        >
-          <span>Menu</span>
-        </a>
       </div>
-    </div>
   );
 }
 
